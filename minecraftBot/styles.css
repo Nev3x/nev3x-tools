@@ -1,0 +1,142 @@
+/* Global Styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Container */
+  
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* added a semi-transparent background to the container */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Headings */
+  
+  h1, h2 {
+    color: #6c5ce7;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Connection, Chat, and Logs */
+  
+  .connection, .chat, .logs {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* added a semi-transparent background to the sections */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  /* Labels and Inputs */
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 300;
+    color: #666;
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+  }
+  
+  /* Send Button */
+  
+  .send-button {
+    background-color: #6c5ce7;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .send-button:hover {
+    background-color: #5c4ccf;
+    box-shadow: 0 3px 5px rgba(92, 76, 207, 0.5);
+  }
+  
+  /* Log Container and Entries */
+  
+  #log-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 250px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* added a semi-transparent background to the log container */
+  }
+  
+  .log-entry {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .log-entry:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .log-entry:last-child {
+    border-bottom: none;
+  }
+  
+  /* Added a beautiful loading animation */
+  
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #6c5ce7;
+    text-align: center;
+  }
+  
+  .loading::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #6c5ce7;
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

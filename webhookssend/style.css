@@ -1,0 +1,45 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* light gray background */
+    text-align: center; /* center all elements */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px;
+    display: block; /* make input fields block elements */
+    margin-left: auto; /* center input fields */
+    margin-right: auto; /* center input fields */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #c7b8ea; /* light purple background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* make submit button a block element */
+    margin-left: auto; /* center submit button */
+    margin-right: auto; /* center submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #b3a9d5; /* hover effect */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #7a288a; /* light purple text color */
+    margin-bottom: 20px; /* add some space between h1 and input fields */
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #7a288a; /* light purple text color */
+    margin-bottom: 20px; /* add some space between h1 and input fields */
+}
