@@ -183,7 +183,7 @@ async def levenstein(docs: Levenstein):
         return f"Similarity (0.01 - 1.0): {similarity:.2f} (high)"
     if similarity > 0.40:
         return f"Similarity (0.01 - 1.0): {similarity:.2f} (moderate)"
-    if similarity < 0.30:
+    if similarity < 0.40:
         return f"Similarity (0.01 - 1.0): {similarity:.2f} (low)"
     
 
