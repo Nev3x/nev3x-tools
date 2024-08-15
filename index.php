@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Light Purple Theme</title>
+	<title>Nev3x Tools</title>
     <link rel="stylesheet" href="style.css">
 	<style>
 a{
